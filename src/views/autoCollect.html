@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% set pageId = 'autoCollect' %}
+
+{% block title %}
+  <title>Coleta automática</title>
+{% endblock title %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/styles/autoCollect.css">
+  <link rel="stylesheet" href="/stykes/responsive.css">
+{% endblock styles %}
+
+{% block content %}
+  {% include "partials/pageHeader.html" %}
+
+  <img id="backGroundImg" src="assets/icones/trash.svg" alt="">
+
+  <div class="content">
+    <h1>Auto Coleta</h1>
+    <p>
+    Cadastre a sua casa na lista de coleta, coloque o item correto a cada dia em frente a sua casa com a etiqueta <strong>Ecoleta</strong> e nossos coletores volutários irão levar seus itens para o ponto de coleta por você.
+    </p>
+
+    
+    <div class="options">
+      <a href="/houses" id="beVolunteer">
+        <strong>Seja um voluntário</strong>
+      </a>
+
+      <a href="/registerHome" id="createHomePoint">
+        <strong>Cadastre seu lar</strong>
+      </a>
+    </div>
+  </div>
+{% endblock content %}
+
+{% block scripts %}
+  <script src="/scripts/index.js"></script>
+{% endblock scripts %}

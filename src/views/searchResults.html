@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% set pageId = "pageSearchResults" %}
+
+{% block title %}
+  <title>Resultado da pesquisa</title>
+{% endblock title %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/styles/searchResults.css">
+
+{% endblock styles %}
+
+{% block content %}
+  {% include "partials/pageHeader.html" %}
+
+  <main>    
+    <h4>
+      <strong>{{ total }}</strong>
+      pontos de coleta encontrados
+    </h4>
+
+    <div class="cards">
+      {% for place in places %}
+        <div class="card">
+          <img src="{{ place.image }}" alt="{{ place.name }}">
+          <h1>{{ place.name }}</h1>
+          <h3>{{ place.items }}</h3>
+          <p>
+            {{ place.city }},
+            {{ place.state }}
+            <br/>
+            {{ place.address }}
+            <br/>
+            {{ place.address2 }}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </main>
+{% endblock content %}

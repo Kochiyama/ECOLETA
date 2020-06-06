@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% set pageId = "houses" %}
+
+{% block title %}
+  <title>casas</title>
+{% endblock title %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/styles/houses.css">
+
+{% endblock styles %}
+
+{% block content %}
+  {% include "partials/pageHeader.html" %}
+
+  <main>    
+    <h4>
+      <strong>{{ total }}</strong>
+      Casas encontradas
+    </h4>
+
+    <div class="cards">
+      {% for place in places %}
+        <div class="card">
+          <h1>{{ place.name }}</h1>
+          <h3>{{ place.phone }}</h3>
+          <p>
+            {{ place.city }},
+            {{ place.state }}
+            <br/>
+            {{ place.address }}
+            <br/>
+            {{ place.address2 }}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </main>
+{% endblock content %}

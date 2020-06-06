@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% set pageId = 'error' %}
+
+{% block title %}
+  <title>Oops!</title>
+{% endblock title %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/error.css">
+{% endblock styles %}
+
+{% block content %}
+  {% include "partials/pageHeader.html" %}
+  
+  <div class="content">
+    <h1>{{ error.title  }}</h1>
+    <p>{{ error.message }}</p>
+  </div>
+{% endblock content %}

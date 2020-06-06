@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% set pageId = "registerHome" %}
+
+{% block title %}
+  <title>Cadastrar casa</title>
+{% endblock title %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/styles/registerHome.css">
+  <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+  {% include "partials/pageHeader.html" %}
+
+  <form action="/registerHome" method="POST">
+
+    <h1>Cadastre a sua casa</h1>
+
+    <fieldset>
+
+      <legend>
+        <h2>Dados da residência e morador</h2>
+      </legend>
+
+      <div class="fieldGroup">
+        <div class="field">
+          <label for="name">Nome completo do morador</label>
+          <input name="name" type="text" placeholder="" required="required">
+        </div>
+        <div class="field">
+          <label for="name">Número de Celular</label>
+          <input name="phone" type="tel" placeholder="(DDD) xxxxx-xxxx" required="required">
+        </div>
+      </div>
+
+      <div class="fieldGroup">
+        <div class="field">
+          <label for="address">Endereço</label>
+          <input name="address" type="text" required="required">
+        </div>
+
+        <div class="field">
+          <label for="address2">Número/Complemento</label>
+          <input name="address2" type="text" required="required">
+        </div>
+      </div>
+
+      <div class="fieldGroup">
+        <div class="field">
+          <label for="state">Estado</label>
+          <select name="uf" id="" required="required">
+            <option value="">Selecione o Estado</option>
+          </select>
+
+          <input type="hidden" name="state">
+        </div>
+
+        <div class="field">
+          <label for="city">Cidade</label>
+          <select name="city" id="" disabled="disabled" required="required">
+            <option value="">Selecione a Cidade</option>
+          </select>
+
+        </div>
+      </div>
+
+    </fieldset>
+
+    <button type="submit">Cadastrar Casa</button>
+
+  </form>
+{% endblock content %}
+
+{% block modal %}
+{% if saved  %}
+  {% include "partials/houseRegistered.html" %}
+{% endif %}
+{% endblock modal %}
+
+{% block scripts %}
+  <script src="/scripts/createPoint.js"></script>
+{% endblock scripts %}
