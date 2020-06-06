@@ -20,3 +20,5 @@ Esta aplicação foi desenvolvida com o front-end e o back-end fundidos, ou seja
 
 ## SGVs
 A grande maioria das artes e ícones utilizados foi fornecida pela própria rocketseat, entretanto existem 1 arte open source do unDraw e um icone da plataforma Font Awsome.
+
+### Veja mais prints na pasta "prints" deste repositório
