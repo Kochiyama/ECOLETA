@@ -1,0 +1,148 @@
+#pageHome {
+  height: 100vh;
+
+  background: url('../assets/icones/home-background.svg') no-repeat;
+  background-position: 040vw 20vh;
+}
+
+#pageHome .content {
+  width: 90vw;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#pageHome header {
+  margin-top: 2.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+#pageHome header a {
+  display: flex;
+
+  color: var(--title-color);
+  font-weight: 700;
+  margin-left: 2rem;
+
+  line-height: 1rem;
+}
+
+.autoColectSpan {
+  margin-right: 0.8rem;
+  display: flex;
+
+  background-image: url('../assets/icones/recycle.svg');
+  width: 20px;
+  height: 20px;
+}
+
+.createPointSpan {
+  margin-right: 0.8rem;
+  display: flex;
+
+  background-image: url('../assets/icones/log-in.svg');
+  width: 20px;
+  height: 20px;
+}
+
+#pageHome main {
+  margin-left: 5vw;
+
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#pageHome main h1 {
+  font-size: 3rem;
+}
+
+#pageHome main p {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  margin-top: 1.3rem;
+
+  color: var(--title-color);
+}
+
+#pageHome main .options {
+  display: flex;
+}
+
+#pageHome main a {
+  width: 50%;
+  max-width: 600px;
+  height: 3.5rem;
+  margin: 0.5rem;
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 0.8rem;
+
+  transition: 400ms;
+
+  color: #ffffff;
+}
+
+#searchPointsButton {
+  background-color: #6633CC;
+}
+
+#searchPointsButton:hover {
+  background-color: #6220c2;
+}
+
+#seeAllPointsButton {
+  background-color: var(--primary-color);
+}
+
+#seeAllPointsButton:hover {
+  background-color: #2fb86e;
+}
+
+#pageHome main a span {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #00000014;
+
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pageHome main a span::after {
+  content: "";
+  background-image: url('../assets/icones/search.svg');
+  height: 20px;
+  width: 20px;
+}
+
+#pageHome main a strong {
+  flex: 1;
+  font-size: 0.7rem;
+  text-align: center;
+}

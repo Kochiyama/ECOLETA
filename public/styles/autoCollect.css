@@ -1,0 +1,99 @@
+#autoCollect {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#backGroundImg {
+  position: absolute;
+  z-index: -1;
+  width: 35rem;
+
+  top: 20vh;
+  left: 45vw;
+}
+
+#autoCollect header {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#autoCollect header a {
+  color: var(--title-color);
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+}
+
+#autoCollect header a span {
+  margin-right: 0.8rem;
+  background-image: url('../assets/icones/arrow-left.svg');
+
+  display: flex;
+
+  width: 20px;
+  height: 24px;
+}
+
+.content {
+  height: 85vh;
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+}
+
+.content p {
+  margin-top: 1rem;
+  color: var(--title-color);
+}
+
+.options {
+  display: flex;
+}
+
+#createHomePoint, #beVolunteer {
+  width: 100%;
+  max-width: 500px;
+  height: 3rem;
+  margin: 0.5rem;
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 0.8rem;
+
+  transition: 400ms;
+
+  color: #ffffff;
+}
+
+#createHomePoint {
+  background-color: var(--primary-color);
+}
+
+#createHomePoint:hover {
+  background-color: #2fb86e;
+}
+
+#beVolunteer {
+  background-color: #6633CC;
+}
+
+#beVolunteer:hover {
+  background-color: #6220c2;
+}
+
+strong {
+  flex: 1;
+  font-size: 1rem;
+  text-align: center;
+}

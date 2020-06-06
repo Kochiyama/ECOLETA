@@ -1,0 +1,131 @@
+#registerHome {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#registerHome header {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#registerHome header a {
+  color: var(--title-color);
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+}
+
+#registerHome header a span {
+  margin-right: 0.8rem;
+  background-image: url('../assets/icones/arrow-left.svg');
+
+  display: flex;
+
+  width: 20px;
+  height: 24px;
+}
+
+form {
+  background-color: #ffffff;
+  
+  margin: 4rem auto;
+  padding: 3.2rem;
+  
+  border-radius: 1rem;
+  max-width: 40rem;
+}
+
+form h1 {
+  font-size: 2rem;
+}
+
+form fieldset {
+  margin-top: 2rem;
+  border: 0;
+}
+
+form legend {
+  margin-bottom: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+form legend span {
+  color: var(--title-color);
+  font-size: 0.8rem;
+}
+
+form legend h2 {
+  font-size: 1.2rem;
+}
+
+form label {
+  color: var(--title-color);
+}
+
+form .field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+form .fieldGroup {
+  display: flex;
+}
+
+form input,
+form select {
+  background-color: #f0f0f5;
+
+  border: 0;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+
+  outline: none;
+
+  border-radius: 0.5rem;
+}
+
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+form label {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+form .fieldGroup .field + .field {
+  margin-left: 1.5rem;
+}
+
+form button {
+  margin-top: 2rem;
+  width: 100%;
+  height: 3rem;
+
+  background-color: var(--primary-color);
+
+  border-radius: 0.5rem;
+  border: 0;
+
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+
+  transition: background-color 300ms;
+}
+
+form button:hover {
+  background-color: #2fb86e;
+}

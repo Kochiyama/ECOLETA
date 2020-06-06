@@ -1,0 +1,95 @@
+/* bigger than standard */
+@media (min-width: 2000px) {
+  :root {
+    font-size: 30px;
+  }
+
+  #pageHome {
+    background-position: 50vw 40vh;
+  }
+
+  #pageHome main {
+    align-self: flex-end;
+    margin-right: 40vw;
+  }
+}
+
+
+/* tinier than standard */
+@media (max-width: 1150px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  main .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 758px) {
+  #pageHome {
+    background: none;
+  }
+
+  #pageHome main {
+    align-self: center;
+  }
+
+  main .cards {
+    grid-template-columns: 1fr;
+  }
+
+  main .card {
+    margin-bottom: 3rem;
+  }
+
+  form .fieldGroup {
+    flex-direction: column;
+  }
+
+  form .fieldGroup .field + .field {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 660px) {
+  .itemsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 530px) {
+  #pageHome .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  #pageHome header a {
+    position: absolute;
+    bottom: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    font-size: 12px;
+  }
+
+  #pageHome header a {
+    bottom: 0;
+  }
+
+  form {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 2rem  1rem;
+  }
+
+
+
+
+
+
+}
